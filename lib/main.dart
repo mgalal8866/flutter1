@@ -6,9 +6,21 @@ import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  runApp(const HomePage());
+  runApp(const StoreApp());
 }
-
+ class StoreApp extends StatelessWidget {
+   const StoreApp({Key? key}) : super(key: key);
+ 
+   @override
+   Widget build(BuildContext context) {
+     return MaterialApp(
+       routes: {
+         HomePage.id :(context) => HomePage(),
+       },
+       initialRoute: HomePage.id ,
+     );
+   }
+ }
  
 //  onPressed: () {
 //            dynamic data =   Api().post(
