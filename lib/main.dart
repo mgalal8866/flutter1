@@ -8,19 +8,20 @@ import 'package:http/http.dart' as http;
 void main() {
   runApp(const StoreApp());
 }
- class StoreApp extends StatelessWidget {
-   const StoreApp({Key? key}) : super(key: key);
- 
-   @override
-   Widget build(BuildContext context) {
-     return MaterialApp(
-       routes: {
-         HomePage.id :(context) => HomePage(),
-       },
-       initialRoute: HomePage.id ,
-     );
-   }
- }
+
+class StoreApp extends StatelessWidget {
+  const StoreApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      routes: {
+        HomePage.id: (context) => HomePage(),
+      },
+      initialRoute: HomePage.id,
+    );
+  }
+}
  
 //  onPressed: () {
 //            dynamic data =   Api().post(

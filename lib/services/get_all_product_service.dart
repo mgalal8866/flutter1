@@ -4,7 +4,7 @@ import 'package:flutter_application_1/models/product_model.dart';
 
 class GetAllProducts
 {
- Future <List<ProductModel>> getallprodouct() async{
+ Future <List<ProductModel>> getallprodouct() async {
       List<dynamic> data1 = await Api().get(url: 'https://fakestoreapi.com/products');
  
       List<ProductModel> productlist = [];
